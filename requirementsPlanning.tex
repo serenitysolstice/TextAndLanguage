@@ -1,0 +1,67 @@
+\documentclass{article}
+
+\title{OpenInfo Planning}
+\author{Taye Brown \\ taylorbrown2397@yahoo.co.uk}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+This document discusses the requirements of the OpenInfo application, designed to manipulate any kind of text in such a way that it becomes significantly easier to understand. 
+
+Covered here are the functional, non-functional and design requirements, and include accessability information.
+
+\section{Requirements}
+
+\subsection{Functional Requirements}
+
+\subsubsection{Importing text}
+
+\begin{enumerate}
+\item Copy and paste text from an external source
+\item Manually enter text
+\item Import an external document (.txt, .pdf, .doc(x), .odt)
+\end{enumerate}
+
+\subsubsection{Manipulating text}
+
+\begin{enumerate}
+\item Automatic simplification of whole piece of text
+\item Manually select a word to substitute
+\item Automatic definition of `complex' words when moused over
+\item Manual define a single selected word
+\item Manually define a word, whether recognised or not
+\item Add word to a list, that it can be automatically switched to something else whenever it appears in text
+\end{enumerate}
+
+\subsubsection{Quality of use}
+
+\begin{enumerate}
+\item A record of words substituted and defined for the user is kept up to the last 10 documents
+\item The user can keep a log of words they have learned with the app, and use a flashcard system to keep up to date on the words they may not perfectly understand yet.
+\item The ability to save a document at any point
+\end{enumerate}
+
+\subsection{Non-Functional Requirements}
+This system is:
+\begin{enumerate}
+\item Intuitive to use
+\item Accurate in its substitutions and definitions to 5\%
+\item Easy to update when a new update is available
+\item Easy to log and report bugs and errors
+\item Substitutes one word at a time in fa piece of text, with a dxelay of no more than one half second each in automatic substitution mode
+\item Completely local - anything shared is shared by the user. 
+\item Uses conventional symbols where text labels are not appropriate, such as for setting options, saving and loading external text
+\end{enumerate}
+
+\subsection{Design Requirements}
+Please see the section on accessability at the end of this document for concerns raised when considering the design of this system.
+\begin{enumerate}
+\item The default colouration for the application is light grey, with dark grey highlights, and black text
+\item An application settings field can allow every element of the application to be customised to suit the user's needs - 
+\end{enumerate}
+
+\section{Accessability}
+
+Since the aim of this application is to make academic information as accessable as possible, accessibility seems an important issue to address. Generally, it should be assumed that people with significant visual imparements will be using a specific text-to-speech application that is beyond the scope of this system. However, various alternative colour options should be considered in the design of the user interface, as some colour combinations are easier for some people to read than others. Other options should include resizing the text where necessary, an obviously accessable tutorial for the different tools available, and the general design of the system should bear in mind accessability for people with learning disabilities, who may particularly benefit from an application like this.
+\end{document}
