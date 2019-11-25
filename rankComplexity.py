@@ -46,6 +46,12 @@ def removePunct(list):
                 list[index] = word
     return list
 
+'''
+    Final complexity should be a combination of the number of syllables and the number of times it appears in
+        a collection of texts.
+    
+'''
+
 
 '''with open("booksForComplexity/sherlockholmes.txt", "r", encoding="utf8") as file:
     text = file.read()

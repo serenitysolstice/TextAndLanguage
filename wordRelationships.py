@@ -1,3 +1,5 @@
+from .textRestructure import *
+
 def makeGraph(keys, values):
     '''
     Builds a graph from a list of keys and list of values. The graph is a dictionary, the
@@ -29,11 +31,11 @@ def findBest(word, graph):
     return b
 
 
-translationWord = "principle"
-words = ["foundation", "assumption", "convention", "rule"]
-weights = [8, 5, 2, 2]
+translationWord = input("Type word: ")
 
-graph = makeGraph(words, weights)
+synonymsTranslationWord = getSynonyms(translationWord)
+
+graph = makeGraph(synonymsTranslationWord, weights)
 
 print(translationWord)
 print("The best possible match we have found is: ")
