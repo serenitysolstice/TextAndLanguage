@@ -36,6 +36,14 @@ def frequencyList(text):
     return wordList, countList
 
 
+def getFrequencyOfWord(word):
+    with open("booksForComplexity\wordCountSH.txt", "r") as file:
+        text = file.read()
+        wordsAndFreq = text.split(" ")
+
+
+
+
 def removePunct(list):
     punct = """,.\/'@;:#~][{])(“*&^%$£!”—‘?><_"""
     for word in list:
@@ -53,17 +61,17 @@ def removePunct(list):
 '''
 
 
-'''with open("booksForComplexity/sherlockholmes.txt", "r", encoding="utf8") as file:
+with open("booksForComplexity/janeAusten.txt", "r", encoding="utf8") as file:
     text = file.read()
 wordList = text.split()
 wordList = removePunct(wordList)
 for word in wordList:
     word = word.lower()
-words, count = frequencyList(wordList)'''
-'''with open("booksForComplexity/wordCountSH.txt", "w", encoding="utf8") as f:
+words, count = frequencyList(wordList)
+with open("booksForComplexity/wordCountJA.txt", "w", encoding="utf8") as f:
     for word in words:
         index = words.index(word)
         number = count[index]
-        f.write(word + ": " + str(number) + "\n"")'''
+        f.write(word + ": " + str(number) + "\n")
 
 

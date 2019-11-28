@@ -88,24 +88,5 @@ def getAntonyms(word):
                 antonyms.append(l.antonyms()[0].name())
     return antonyms
 
-w = input("Enter word: ")
-b = checkWordInDictionary(w)
-if b == True:
-    print("Word is in dictionary")
-else:
-    print("Word not found")
-net = wn.synsets(w)
-if len(net) > 1:
-    print(net)
-    num = int(input("Which element of the list are you interested in?"))
-else:
-    num = 0
-
-print(getDefinition(net, num))
-
-synonyms = getSynonyms(w)
-antonyms = getAntonyms(w)
-print(synonyms)
-print(antonyms)
 
 

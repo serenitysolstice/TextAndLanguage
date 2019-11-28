@@ -1,4 +1,4 @@
-from .textRestructure import *
+from textRestructure import *
 
 def makeGraph(keys, values):
     '''
@@ -34,6 +34,8 @@ def findBest(word, graph):
 translationWord = input("Type word: ")
 
 synonymsTranslationWord = getSynonyms(translationWord)
+
+
 
 graph = makeGraph(synonymsTranslationWord, weights)
 
