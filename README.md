@@ -7,3 +7,5 @@ Current development focuses on ranking the complexity of words, using a combinat
 Complexity = num syllables / frequency
 
 The project makes heavy use of the NLTK to break down words, to define words and to find synonyms, which is the basis of word substitution.
+
+This project uses Python 3.8.0 and the default installation of NLTK.
